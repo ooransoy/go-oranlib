@@ -1,6 +1,9 @@
 /*
 	FYI: This code was written with the intention of manually testing the
 	ffagent library.
+
+	This file is covered by the Do What the Fuck You Want To Public License.
+	Not gee enn yuu something something v3.
 */
 
 package main

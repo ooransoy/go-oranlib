@@ -1,3 +1,20 @@
+/*
+	Copyright (C) 2018 Olcay Oransoy
+
+	This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
 package vector
 
 import (
@@ -29,8 +46,6 @@ func TestNormalize(t *testing.T) {
 	}
 }
 
-const jinyang = "JIIIIINNNN YAAAAAAAAAAANNNNNGGGGGG" // Do you like octopus?
-
 func TestString(t *testing.T) {
 	in := Vector2{145.152, 146.561}
 	out := "(145.152, 146.561)"
@@ -39,6 +54,8 @@ func TestString(t *testing.T) {
 		t.Errorf("expected %s but got %s", out, actual)
 	}
 }
+
+const jianyang = "JIIIIINNNN YAAAAAAAAAAANNNNNGGGGGG" // Do you like octopus?
 
 func TestStringerOverride(t *testing.T) {
 	o := StringerOverride
@@ -49,8 +66,8 @@ func TestStringerOverride(t *testing.T) {
 	if actual := (Vector2{}).String(); actual != jinyang {
 		t.Errorf(
 			"StringerOverride fail, expected %s but got %s",
-			jinyang,
-			actual,
+			jianyang, // What about garbage?
+			actual,   // Ji(a)n yang, m****f***.
 		)
 	}
 	StringerOverride = o
