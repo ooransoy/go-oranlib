@@ -53,7 +53,7 @@ func (v Vector2) Scale(s float64) Vector2 {
 }
 
 // String stringifies the Vector2 reciever.
-// Actually, if M-Theory is real it doesn't have to. WUBBA LUBBA DUB DUB
+// Actually, if M-Theory is real it doesn't have to.
 func (v Vector2) String() string {
 	if StringerOverride != nil {
 		return StringerOverride(v)
